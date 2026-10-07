@@ -1,7 +1,1 @@
-const menu = document.querySelector('.menu-toggle');
-const links = document.querySelector('.nav-links');
-menu.addEventListener('click', () => links.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(a => {
-  a.addEventListener('click', () => links.classList.remove('open'));
-});
-document.getElementById('year').textContent = new Date().getFullYear();
+const m=document.querySelector('.menu'),n=document.querySelector('.navlinks');if(m)m.onclick=()=>n.classList.toggle('open');const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
